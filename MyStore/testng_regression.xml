@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Regression">
+  <parameter name="browser" value="Chrome"></parameter>
+	<groups>
+		<run>
+           <include name="Regression"></include>
+		</run>
+	</groups>
+    <classes>
+      <class name="com.FirstProject.testccases.OrderConfirmationTest"/>
+      <class name="com.FirstProject.testccases.HomePageTest"/>
+      <class name="com.FirstProject.testccases.OrderPageTest"/>
+      <class name="com.FirstProject.testccases.LoginPageTest"/>
+      <class name="com.FirstProject.testccases.AddToCartPageTest"/>
+      <class name="com.FirstProject.testccases.SearchResultPageTest"/>
+      <class name="com.FirstProject.testccases.AccountCreationPageTest"/>
+      <class name="com.FirstProject.testccases.IndexPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
